@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Learning About List, Table and Form Tags in HTML.</h1>
+        <h4>ODER LIST</h4>
+        <ol>
+            <li>Name</li>
+            <li>Age</li>
+            <li>Gender</li>
+            <li>Address</li>
+        </ol>
+        <ol type="A">
+            <li>JAVA</li>
+            <li>PHP</li>
+            <li>KOTLIN</li>
+            <li>PYTHON</li>
+        </ol>
+        <ol type="I">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>REACT</li>
+        </ol>
+        <h4>UNODER LIST</h4>
+        <ul type="circle">
+            <li>Android</li>
+            <li>Iphone</li>
+            <li>Windows</li>
+            <li>Mac</li>
+        </ul>
+        <ul type="square">
+            <li>Home</li>
+            <li>Service</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </ul>
+
+        <h4>NESTED LIST</h4>
+
+        <ol>
+            <li>Student Details</li>
+            <ul>
+                <li>Name</li>
+                <li>Age</li>
+                <li>Class</li>
+            </ul>
+            <li>Parent Details</li>
+            <ul>
+                <li>Family Members</li>
+                <li>Business</li>
+                <li>Income</li>
+            </ul>
+        </ol>
+        <hr />
+        <hr />
+        <h1>TABLE TAGS IN HTML</h1>
+        <table border="1px">
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Pass/Fail</th>
+            </tr>
+            <tr>
+                <td>Safik</td>
+                <td>Web Design</td>
+                <td>80</td>
+                <td>Pass</td>
+            </tr>
+            <tr>
+                <td>Azim</td>
+                <td>Android</td>
+                <td>70</td>
+                <td>Pass</td>
+            </tr>
+            <tr>
+                <td>Nisar</td>
+                <td>UI/UX</td>
+                <td>75</td>
+                <td>Pass</td>
+            </tr>
+            <tr>
+                <td>Vasim</td>
+                <td>Full Stack</td>
+                <td>40</td>
+                <td>Fail</td>
+            </tr>
+        </table>
+        <h4>COLSPAN TAGS IN HTML</h4>
+        <table border="1px">
+            <th colspan="5">Student Details</th>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Pass/Fail</th>
+            </tr>
+            <tr>
+                <td>Safik</td>
+                <td>Web Design</td>
+                <td>80</td>
+                <td>Pass</td>
+            </tr>
+            <tr>
+                <td>Azim</td>
+                <td>Android</td>
+                <td>70</td>
+                <td>Pass</td>
+            </tr>
+            <tr>
+                <td colspan="2">Nisar</td>
+                <td>UI/UX</td>
+                <td>75</td>
+                <td>Pass</td>
+            </tr>
+            <tr>
+                <td>Vasim</td>
+                <td>Full Stack</td>
+                <td>40</td>
+                <td>Fail</td>
+            </tr>
+        </table>
+        <h4>ROWSPAN TAGS IN HTML</h4>
+        <table border="1px">
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Pass/Fail</th>
+            </tr>
+            <tr>
+                <td rowspan="3">Safik</td>
+                <td>Web Design</td>
+                <td>80</td>
+                <td>Pass</td>
+            </tr>
+            <tr>
+                <td>Android</td>
+                <td>70</td>
+                <td>Pass</td>
+            </tr>
+            <tr>
+                <td>UI/UX</td>
+                <td>75</td>
+                <td>Pass</td>
+            </tr>
+            <tr>
+                <td>Vasim</td>
+                <td>Full Stack</td>
+                <td>40</td>
+                <td>Fail</td>
+            </tr>
+        </table>
+        <hr />
+        <hr />
+        <h1>FORM TAGS IN HTML</h1>
+        
+<form action="/index.html" method="post">
+    <fieldset>
+        <legend>User Details</legend>
+
+        <label>Username: </label>
+        <input type="text" id="usr" name="username"
+            placeholder="Enter Your name">
+        <br><br>
+
+        <label for="em">Email: </label>
+        <input type="email" id="em" name="email"
+            placeholder="Enter Your email">
+        <br><br>
+
+        <label for="age">Age: </label>
+        <input type="number" id="age" name="age">
+        <br><br>
+
+        <label for="address">Address: </label>
+        <textarea rows="1" cols="40" id="address"
+            name="address"></textarea>
+        <br><br>
+
+        <label for="pwd">Password: </label>
+        <input type="password" name="Password" id="pwd">
+        <br><br>
+
+        <label>Gender: </label>
+        
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        
+        <input type="radio" name="gender" value="other" id="oth">
+        <label for="oth">Other</label>
+        <br><br>
+
+        <label>Select Your Hobbies: </label>
+        <label for="games">Games</label>
+        <input type="checkbox" name="hobbies" id="games" value="games">
+
+        <label for="music">Music</label>
+        <input type="checkbox" name="hobbies" id="music" value="music">
+
+        <label for="travel">Travel</label>
+        <input type="checkbox" name="hobbies" id="travel" value="travel">
+        <br><br>
+
+        <label for="cny">Select Your Country: </label>
+        <select name="country" id="cny">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+
+        <label for="price">Select Price Range for Clothes: </label>
+        <input type="range" name="price" id="price">
+        <br><br>
+
+        <label for="tme">DOB: </label>
+        <input type="datetime-local" name="time" id="tme">
+        <br><br>
+
+        <label for="clr">Select The Color: </label>
+        <input type="color" name="color" id="clr">
+        <br><br>
+
+        <label for="file">Upload Your File Here: </label>
+        <input type="file" name="file" id="file">
+        <br><br>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+        
+
+    </fieldset>
+</form>
+
+    </body>
+</html>
