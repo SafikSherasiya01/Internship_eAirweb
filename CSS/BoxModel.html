@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Box Model In CSS</title>
+    <style>
+        .box, .par{
+            height: 200px;
+            width: 200px;
+            
+        }
+        #pad{
+            background-color: aqua;
+            padding: 20px;
+            text-align: center;
+
+        }
+        #mar{
+            background-color: blueviolet;
+            margin: 25px;
+            text-align: center;
+        }
+        #man{
+            background-color: black;
+        }
+        #par1{
+            background-color: aqua;
+            border: 2px solid black;
+            margin-bottom: 5px;
+            
+        }
+        #par2{
+            background-color: burlywood;
+            border: 8px  dotted black;
+            margin-bottom: 5px;
+            border-radius: 10px;
+        }
+        #par3{
+            background-color: chartreuse;
+            border: 5px dashed black;
+            border-radius: 0px 0px 30px 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS BOX MODEL</h1>
+    <hr>
+    <h2>Padding In Box Model</h2>
+    <div id="man">
+    <div class="box "id="pad">Padding</div>
+    <div class="box "id="mar">Margin</div>
+    </div>
+
+    <hr>
+    <h1>CSS Border & Border Radius </h1>
+    <div class="par" id="par1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nulla.</div>
+    <div class="par" id="par2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, fuga.</div>
+    <div class="par" id="par3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, fuga.</div>
+
+</body>
+</html>

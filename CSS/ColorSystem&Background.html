@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Color System And Background Color In CSS.</title>
+
+    <style>
+        body{
+            background-image: url(/images/bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        div{
+            height: 50px;
+            width: 50px;
+        }
+        #fst{
+            background-color: rgba(50,80,0, 0.25);
+        }
+
+        #sct{
+            background-color: rgba(50,80,0, 0.50);
+        }
+
+        #thd{
+            background-color: rgba(50,80,0, 0.75);
+        }
+
+        #main{
+            color:darkorchid;
+        }
+
+        #imgg{
+            height: 250px;
+            width: 1000px;
+            background-image: url(/images/css.png);
+            background-size: content;
+            background-position: center;
+            background-repeat: repeat-x;
+        }
+
+        #sht{
+            height: 100px;
+            width: 100px;
+            background: url(/images/css.png) repeat-y right top;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Color System And Background Color In CSS.</h1>
+    
+    <h2>Background Color with Opacity</h2>
+    <div id="fst">DIV 1</div>
+    <div id="sct">DIV 2</div>
+    <div id="thd">DIV 3</div>
+
+    <section id="main">
+    <h2>Main Content Color</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, laborum. Deserunt rem repellendus ullam assumenda ducimus maiores fugit soluta dolores.</p>
+    </section>
+
+    <h2>Background Image</h1>
+    <div id="imgg"></div>
+
+    <h2>Shorthand Property</h2>
+    <div id="sht"></div>
+</body>
+</html>
