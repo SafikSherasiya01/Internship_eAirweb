@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <title>CSS Relative Unit</title>
+    <style>
+        body{
+            font-size: 20px;
+        }
+        h1{
+            text-align: center;
+            color:darkgoldenrod
+        }
+        .cls{
+            border:4px solid black;
+            margin:5px;
+        }
+        #pxx{
+            font-size: 40px;
+        }
+        #box1{
+            height: 500px;
+            width:500px;
+            background-color: blueviolet;
+            font-size: 30px;
+        }
+        #box2{
+            height: 250px;
+            width: 250px;
+            background-color: blanchedalmond;
+            font-size: 2em;
+        }
+        #box3{
+            background-color: chartreuse;
+            font-size: 2rem;
+            height: 200px;
+            width:200px;
+        }
+        #pr{
+            height: 200px;
+            width: 200px;
+            background-color: cornflowerblue;
+            
+        }
+        #pr2{
+            height: 80%;
+            width:40%;
+            background-color: darkgreen;
+            
+        }
+    </style>
+ </head>
+ <body>
+    <hr>
+    <h1>CSS Relative Unit</h1>
+    <hr>
+
+    <h1>Pixel (PX)</h1>
+    <div id="pxx">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, tenetur?</div>
+    <hr>
+    <h1>EM </h1>
+   <div class="cls" id="box1">Font size is giving using pixel
+    <div class="cls" id="box2">Sizing Using em </div>
+    </div>
+    <hr>
+    <h1>REM</h1>
+    <div class="cls" id="box3">Font size is giving using rem</div>
+    <hr>
+    <h1>Percentage</h1>
+    <div id="pr" class="cls">Main Box
+    <div id="pr2" class="cls">Second Box</div>
+    </div>
+ </body>
+ </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Position</title>
+    <style>.box{
+        height:100px;
+        width:100px;
+        background-color: burlywood;
+        margin:5px;
+    }
+    #b1{
+        position: static;
+    }
+    #b2{
+        position: relative;
+        top:10px;
+        left:150px;
+    }
+    #b3{
+        position: absolute;
+        top: 350px;
+        left: 350px;
+    }
+    #b4{
+        position: fixed;
+        top: 290px;
+        left: 110px;
+    }
+   #b5{
+    background-color: aquamarine;
+    position: relative;
+    z-index: 1;
+   }
+    #b6{
+    background-color:antiquewhite;
+    position: relative;
+    top: -50px;
+    z-index: 2;
+   }
+    </style>
+</head>
+<body>
+    <h1>CSS Position</h1>
+    <div class="box" id="b1">Static</div>
+    <div class="box" id="b2">Relative</div>
+    <div class="box" id="b3">Absolute</div>
+    <div class="box" id="b4">Fixed</div>
+    <div class="box"  id="b5">Z-index</div>
+    <div class="box"  id="b6">Z-index</div>
+    <div  class="box">Lorem ipsum dolor sit amet.</div>
+    <div class="box">Lorem ipsum dolor sit amet.</div>
+    <div class="box">Lorem ipsum dolor sit amet.</div>
+    <div class="box">Lorem ipsum dolor sit amet.</div>
+    <div class="box">Lorem ipsum dolor sit amet.</div>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Flex Box</title>
+    <style>
+        h1{
+            text-align: center;
+            color:darkgoldenrod;
+        }
+        #con{
+            height: 500px;
+            width: 500px;
+            background-color: #ccc;
+            display: flex;
+        }
+        #con1{
+            height: 500px;
+            width: 500px;
+            background-color: #ccc;
+            display: flex;
+            flex-direction: column;
+        }
+        #con2{
+            height: 500px;
+            width: 500px;
+            background-color: #ccc;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        #con3{
+            height: 500px;
+            width: 500px;
+            background-color: #ccc;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        #con4{
+            height: 600px;
+            width: 600px;
+            background-color: #ccc;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        #con5{
+            height: 600px;
+            width: 600px;
+            background-color: #ccc;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        #con6{
+            height: 600px;
+            width: 600px;
+            background-color: #ccc;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+        }
+        .cls{
+            height: 250px;
+            width: 250px;
+            background-color: rgb(157, 226, 93);
+            margin: 10px;
+            flex-direction: row;
+            text-align: center;
+            border: 2px solid black;
+        }
+        #jst{
+            height:400px;
+            width: 1000px;
+            background-color:cyan;
+            display: flex;
+            justify-content:flex-start;
+        }
+        #jst2{
+            height:400px;
+            width: 1000px;
+            background-color:cyan;
+            display: flex;
+            justify-content:flex-end;
+        }
+        #jst3{
+            height:400px;
+            width: 1000px;
+            background-color:cyan;
+            display: flex;
+            justify-content:center;
+        }
+        #jst4{
+            height:400px;
+            width: 1000px;
+            background-color:cyan;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+        }
+        #jst5{
+            height:1000px;
+            width: 1000px;
+            background-color:cyan;
+            display: flex;
+            flex-wrap: wrap;
+            align-content:center;
+            justify-content: center;
+        }
+         #jst6{
+            height:400px;
+            width: 1400px;
+            background-color:cyan;
+            display: flex;
+            justify-content:space-around;;
+        }
+        #jst7{
+            height:400px;
+            width: 1400px;
+            background-color:cyan;
+            display: flex;
+            justify-content:space-between;;
+        }
+        #jst8{
+            height:400px;
+            width: 1400px;
+            background-color:cyan;
+            display: flex;
+            justify-content:space-evenly;;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <h1>CSS Flex Box</h1>
+    <hr>
+    <h1>Row Wise</h1>
+    <div id="con">
+        <div class="cls">Box1</div>
+        <div class="cls">Box2</div>
+        <div class="cls">Box3</div>
+    </div>
+    <hr>
+    <h1>Column Wise</h1>
+    <div id="con1">
+        <div class="cls">Box1</div>
+        <div class="cls">Box2</div>
+        <div class="cls">Box3</div>
+    </div>
+    <hr>
+    <h1>Row-Reverse Wise</h1>
+    <div id="con2">
+        <div class="cls">Box1</div>
+        <div class="cls">Box2</div>
+        <div class="cls">Box3</div>
+    </div>
+    <hr>
+    <h1>Column-Reverse Wise</h1>
+    <div id="con3">
+        <div class="cls">Box1</div>
+        <div class="cls">Box2</div>
+        <div class="cls">Box3</div>
+    </div>
+    <hr>
+    <h1>Display Flex-Wrap:Nowrap</h1>
+    <div id="con4">
+        <div class="cls">Box1</div>
+        <div class="cls">Box2</div>
+        <div class="cls">Box3</div>
+    </div>
+    <hr>
+    <h1>Display Flex-Wrap:Wrap</h1>
+    <div id="con5">
+        <div class="cls">Box1</div>
+        <div class="cls">Box2</div>
+        <div class="cls">Box3</div>
+    </div>
+     <hr>
+    <h1>Display Flex-Wrap:Reverse</h1>
+    <div id="con6">
+        <div class="cls">Box1</div>
+        <div class="cls">Box2</div>
+        <div class="cls">Box3</div>
+    </div>
+    <hr>
+    <h1>Justify Content Using Flex Property</h1>
+    <hr>
+    <h1>Justify Content:Flex-Start</h1>
+    <div id="jst">
+        <div class="cls">Box1</div>
+        <div class="cls">Box2</div>
+        <div class="cls">Box3</div>
+    </div>
+    <hr>
+    <h1>Justify Content:Flex-End</h1>
+    <div id="jst2">
+        <div class="cls">Box1</div>
+        <div class="cls">Box2</div>
+        <div class="cls">Box3</div>
+    </div>
+    <hr>
+    <h1>Justify Content:Center</h1>
+    <div id="jst3">
+        <div class="cls">Box1</div>
+        <div class="cls">Box2</div>
+        <div class="cls">Box3</div>
+    </div>
+    <hr>
+    <h1>Justify Content:Space-Around</h1>
+    <div id="jst6">
+        <div class="cls">Box1</div>
+        <div class="cls">Box2</div>
+        <div class="cls">Box3</div>
+        </div>
+    <hr>
+    <h1>Justify Content:Space-Between</h1>
+    <div id="jst7">
+        <div class="cls">Box1</div>
+        <div class="cls">Box2</div>
+        <div class="cls">Box3</div>
+    </div>
+    <hr>
+    <h1>Justify Content:Space-Evenly</h1>
+    <div id="jst8">
+        <div class="cls">Box1</div>
+        <div class="cls">Box2</div>
+        <div class="cls">Box3</div>
+    </div>
+    <hr>
+    <h1>Align item:Center</h1>
+    <hr>
+    <div id="jst4">
+        <div class="cls">Box1</div>
+        <div class="cls">Box2</div>
+        <div class="cls">Box3</div>
+    </div>
+    <hr>
+    <h1>Align Content:Center</h1>
+    <div id="jst5">
+        <div class="cls">Box1</div>
+        <div class="cls">Box2</div>
+        <div class="cls">Box3</div>
+        <div class="cls">Box2</div>
+        <div class="cls">Box3</div>
+    </div>
+</body>
+</html>
