@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transform</title>
+    <style>
+        .box{
+            height: 70px;
+            width:70px;
+            margin: 10px;
+            background-color: red;
+            border: 2px solid black;
+            border-radius: 5px;  
+            transition: all 1s ease-in-out;
+        }
+        #box1:hover{
+            transform: rotate(90deg);
+        }
+        #box2:hover{
+            transform: rotatex(50deg);
+        }
+        #box3:hover{
+            transform: rotatey(50deg);
+        }
+        #box4:hover{
+            transform: rotatez(360deg);
+        }
+
+        #box5:hover{
+            transform: skew(50deg);
+        }
+         #box6:hover{
+            transform: skew(30deg, 50deg);
+        }
+        #box7:hover{
+            transform: scale(2);
+        }
+        #box8:hover{
+            transform: scalex(2);
+        }
+        #box9:hover{
+            transform: scaley(2);
+        }
+        #box10:hover{
+            transform: translate(50px);
+        }   
+        #box11:hover{
+            transform: translate(50px, 50px);
+        }
+        #box12:hover{
+            transform: translatey(50px);
+        }
+
+
+        </style>
+</head>
+<body>
+    <h1>Transform</h1>
+    <hr>
+    <h2>Rotate</h2>
+    <div class="box" id="box1">Tranform</div>
+    <div class="box" id="box2">Tranform</div>
+    <div class="box" id="box3">Tranform</div>
+    <div class="box"id="box4">Tranform</div>
+    <hr>
+    <h2>Skew</h2>
+    <div class="box" id="box5">Tranform</div>
+    <div class="box" id="box6">Tranform</div>
+    <hr>
+    <h2>Scale</h2>
+    <div class="box" id="box7">Tranform</div>
+    <div class="box" id="box8">Tranform</div>
+    <div class="box" id="box9">Tranform</div>
+    <hr>
+    <h2>Translate</h2>
+    <div class="box" id="box10">Tranform</div>
+    <div class="box" id="box11">Tranform</div>
+    <div class="box" id="box12">Tranform</div>
+</body>
+</html>

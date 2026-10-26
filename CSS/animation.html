@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation</title>
+    <style>
+        #box1{
+           height: 70px;
+            width:70px;
+            background-color: red;
+            border: 2px solid black;
+            border-radius: 5px;  
+            position: relative;
+            animation-name: safik;
+            animation-timing-function: ease-in-out;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        #box2{
+            height: 70px;
+            width:70px;
+            background-color: blue;
+            border: 2px solid black;
+            border-radius: 5px;  
+            position: relative;
+            animation-name: safik;
+            animation-timing-function: ease-in-out;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+        #box3{
+            height: 70px;
+            width:70px;
+            background-color: green;
+            border: 2px solid black;
+            border-radius: 5px;  
+            position: relative;
+            animation-name: safik;
+            animation-timing-function: ease-in-out;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        #box4{
+            height: 70px;
+            width:70px;
+            background-color: purple;
+            border: 2px solid black;
+            border-radius: 5px;  
+            position: relative;
+            animation-name: safik;
+            animation-timing-function: ease-in-out;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse-alternate;
+        }
+        #box5{
+            height: 70px;
+            width:70px;
+            background-color: orange;
+            border: 2px solid black;
+            border-radius: 5px;  
+            position: relative;
+            animation-name: Azim;
+            animation-timing-function: ease-in-out;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        @keyframes safik{
+            from{left:20px;}
+            to{left:100px;}
+        }
+        @keyframes Azim{
+            0%{left:20px;}
+            50%{left:60px;}
+            100%{left:200px;}
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Animation</h1>
+    <hr>
+    <h2>Animation direction normal</h2>
+    <div id="box1">Animation</div>
+    <hr>
+    <h2>Animation direction reverse</h2>
+    <div id="box2">Animation</div>
+    <hr>
+    <h2>Animation direction alternate</h2>
+    <div id="box3">Animation</div>
+    <hr>
+    <h2>Animation direction reverse-alternate</h2>
+    <div id="box4">Animation</div>
+    <hr>
+    <h2>Animation with percentage</h2>
+    <div id="box5">Animation</div>
+</body>
+</html>

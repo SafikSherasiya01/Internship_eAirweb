@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pseudo In CSS</title>
+    <style>
+        .box{
+            height: 50px;
+            width:50px;
+            background-color: red;
+            border: 2px solid black;
+            border-radius: 5px;  
+        }
+        .box:hover{
+            height: 100px;
+            width:100px;
+            background-color: blue;
+        }
+
+        .box1{
+            height: 50px;
+            width:50px;
+            background-color: red;
+            border: 2px solid black;
+            border-radius: 5px;   
+        }
+        .box1:hover{
+            height: 100px;
+            width:100px;
+            background-color: pink;
+        }
+        .box1:active{
+            height: 100px;
+            width:100px;
+            background-color: blue;
+        }
+        .box2{
+            height: 50px;
+            width:50px;
+            background-color: red;
+            border: 2px solid black;
+            border-radius: 5px;  
+            transition: all 1s ease-in-out;
+        }
+        .box2:hover{
+            height: 100px;
+            width:100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover Effect And Active</h1>
+    <div class="box">Hover Effect</div>
+    <div class="box1">Active Effect</div>
+    <hr>
+    <h1>Transition Effect</h1>
+    <div class="box2">Transition Effect</div>
+</body>
+</html>
