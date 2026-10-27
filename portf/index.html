@@ -1,62 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head></head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
-        <p>Safik Sherasiya</p>
+        <a href="#home" id="logo">Safik Sherasiya</a>
         <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about1">About</a></li>
+            <li><a href="#Skills">skills</a></li>
+            <li><a href="#Project">Project</a></li>
+            <li><a href="#Contact">Contact</a></li>
         </ul>
     </nav>
-    
-        <main>
-            <section>
+
+    <main>
+        <section id="home">
             <div class="container">
                 <div class="box" id="imagee"> <img id="img11" src="/images/safik.jpeg" alt=""></div>
-                 <div class="box" id="dataa">
+                <div class="box" id="dataa">
                     <p style="text-align: center;">Hello, I'M</p>
-                     <h1 style="text-align: center;">Safik Sherasiya</h1>
-                     <h2 style="text-align: center;"> WEB DEVELOPER</h2>
-                     <button>Download CV</button>
-                    <button>Contact Info</button><br>
-                    <image id="linkd" src="/images/linkedin.png"/>
-                    <image id="git" src="/images/github.png"/>
+                    <h1 style="text-align: center;">Safik Sherasiya</h1>
+                    <h2 style="text-align: center; color:#6D5AE6;"> WEB DEVELOPER</h2>
+                    <a href="/Assest/ASSOCIATE FRONTEND DEVELOPER.pdf" download><button class="btn1">Download
+                            CV</button></a>
+                    <a href="#Contact"><button class="btn1">Contact Info</button></a><br>
+                    <a href="https://www.linkedin.com/in/safik-sherasiya-99b568322/">
+                        <image id="linkd" src="/images/linkedin.png" />
+                    </a>
+                    <a href="https://github.com/SafikSherasiya01">
+                        <image id="git" src="/images/github.png" />
+                    </a>
                 </div>
-             </section>
-             
-             <section>
-                <div class="about">
-                    <p id="par">Get To Know More</p>
-                    <p id="par1">About Me</p>
-                </div>
-             </section>
+        </section>
 
-             <section class="aboutc">
-                <div> <img id="img1" src="/images/safik.jpeg" alt=""></div>
-                <div class="aboutm "> 
-                    <div id="exp">
-                        <img id="expm" src="/images/achivement.png" alt=""><br>
-                                <p id="ed">Experience</p>
-                                2+ years <br>
-                                Frontend Development</div>
-                    <div id="exp">
-                        <img id="expm1" src="/images/achivement.png" alt=""><br>
-                        <p id="ed">Education</p>
-                                Dipoloma C.E <br>
-                                B.Tech C.E <br>
+        <section id="about1">
+            <div class="about">
+                <p id="par">Get To Know More</p>
+                <p id="par1">About Me</p>
+            </div>
+        </section>
+
+        <section class="aboutc">
+            <div> <img id="img1" src="/images/safik.jpeg" alt=""></div>
+            <div class="aboutm ">
+                <div id="exp">
+                    <img id="expm" src="/images/achivement.png" alt=""><br>
+                    <p id="ed">Learning & Development</p>
+                    Currently learning <br>
+                    Frontend Development
+                </div>
+                <div id="exp">
+                    <img id="expm1" src="/images/achivement.png" alt=""><br>
+                    <p id="ed">Education</p>
+                    Diploma in Computer Engineering <br>
+                    B.Tech in Computer Engineering <br>
+                </div>
+                <div>
+                    <p id="parr">I am Safik Sherasiya, a Computer Engineering student at Marwadi University with an
+                        interest in web designing and frontend development. I enjoy creating clean, user-friendly, and
+                        responsive websites using HTML, CSS, JavaScript, and Bootstrap. I am also learning PHP and MySQL
+                        to understand how websites work with databases. I like exploring new technologies, improving my
+                        design skills, and building projects that solve real-world problems.</p>
+                </div>
+            </div>
+        </section>
+        <br><br><br><br> <br><br><br>
+        <section id="Skills">
+            <div class="about">
+                <p id="par">Explore My</p>
+                <p id="par1">Skills</p>
+            </div>
+        </section>
+
+        <section id="parent">
+            <div class="exp1">
+                <h2>Frontend Development</h2>
+
+                <div class="skills">
+
+                    <div class="skill">
+                        <span>✔</span>
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Skill</p>
+                        </div>
                     </div>
-                    <div>
-                        <p id="parr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus id expedita rem adipisci totam voluptatum excepturi tempore vero molestiae pariatur quae porro ut velit perferendis veniam soluta deleniti necessitatibus ad, debitis vel officiis in. Fugiat nam illum numquam repellat ad nesciunt magnam atque accusantium, nemo doloribus quas quasi, rem modi.</p>
+
+                    <div class="skill">
+                        <span>✔</span>
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Skill</p>
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>✔</span>
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Basic</p>
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>✔</span>
+                        <div>
+                            <h3>Bootstrap</h3>
+                            <p>Skill</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="exp1">
+                <h2>Backend Development</h2>
+
+                <div class="skills">
+
+                    <div class="skill">
+                        <span>✔</span>
+                        <div>
+                            <h3>MYSQL</h3>
+                            <p>Skill</p>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>✔</span>
+                        <div>
+                            <h3>PHP</h3>
+                            <p>Basic</p>
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>✔</span>
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Basic</p>
+                        </div>
+                    </div>
+
+
+                    <div class="skill">
+                        <span>✔</span>
+                        <div>
+                            <h3>Bootstrap</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section id="Project">
+            <div class="about">
+                <p id="par">Browse My Recent</p>
+                <p id="par1">Projects</p>
+            </div>
+        </section>
+        <section id="proj">
+            <div class="child">
+                <div id="chd">
+                    <img src="/images/project-1.png" alt="" class="imgd">
+                    <div class="dat">
+                        <h2>Project-1</h2>
+                        <button class="btn1">Github</button>
+                        <button class="btn1">Live Demo</button>
                     </div>
                 </div>
-             </section>
-        </main>
-   
+            </div>
+            <div class="child">
+                <img src="/images/project-2.png" alt="" class="imgd">
+                <div class="dat">
+                    <h2>Project-2</h2>
+                    <button class="btn1">Github</button>
+                    <button class="btn1">Live Demo</button>
+                </div>
+
+            </div>
+            <div class="child">
+                <img src="/images/project-3.png" alt="" class="imgd">
+                <div class="dat">
+                    <h2>Project-3</h2>
+                    <button class="btn1">Github</button>
+                    <button class="btn1">Live Demo</button>
+                </div>
+            </div>
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section class="contact-section" id="Contact">
+
+            <div class="about">
+                <p id="par">Get in Touch</p>
+                <p id="par1">Contact Me</p>
+            </div>
+
+            <div id="dat1">
+                <div id="chd1">
+
+                    <a class="contact-item" href="mailto:SafikSherasiya786@gmail.com">
+                        <img src="/images/mail.png" alt="Email">
+                        <span>SafikSherasiya786@gmail.com</span>
+                    </a>
+
+                    <a class="contact-item" href="https://www.linkedin.com/in/safik-sherasiya-99b568322/">
+                        <img src="/images/linkedin.png" alt="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+
+                </div>
+            </div>
+
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <footer>
+            <div id="fot">
+                <p>Copyright © 2026 Safik Sherasiya. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </main>
+
 </body>
+
 </html>
