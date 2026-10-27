@@ -95,15 +95,16 @@ button {
 }
 .aboutc {
   min-height: 700px;
+  min-width: 80%;
   display: flex;
   align-items: center;
   gap: 100px;
-  margin-left: 60px;
+  margin-left: 20px;
 }
 
 #exp {
   height: 140px;
-  width: 600px;
+  width: 40%;
   border: 1px solid black;
   border-radius: 30px;
   align-items: center;
@@ -139,8 +140,9 @@ button {
 }
 
 #parr {
-  font-size: 22px;
+  font-size: 20px;
   text-align: justify;
+  width: 95%;
 }
 
 #ed {
