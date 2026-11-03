@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .contanier{
+            border: 1px solid black;
+            height: 450px;
+            width: 200px;
+            justify-content: center;
+            padding: 10px;
+        }
+        .box{
+            border: 1px solid black;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+        }
+        .clc{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="contanier">
+     <div class="clc" >
+            <input type="text" id="display">
+        <div class="box">C</div>
+        <div class="box" onclick="currentDisplay = currentDisplay + '1';
+        document.querySelector('#display').value = currentDisplay;">1</div>
+        <div class="box" onclick="currentDisplay = currentDisplay + '2';
+        document.querySelector('#display').value = currentDisplay;">2</div>
+        <div class="box" onclick="currentDisplay = currentDisplay + '3';
+        document.querySelector('#display').value = currentDisplay;">3</div>
+        <div class="box" onclick="currentDisplay = currentDisplay + '4';
+        document.querySelector('#display').value = currentDisplay;">4</div>
+        <div class="box" onclick="currentDisplay = currentDisplay + '5';
+        document.querySelector('#display').value = currentDisplay;">5</div>
+        <div class="box" onclick="currentDisplay = currentDisplay + '6';
+        document.querySelector('#display').value = currentDisplay;">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">0</div>
+        <div class="box" onclick="
+        currentDisplay = currentDisplay + '+';
+         document.querySelector('#display').value = currentDisplay;">+</div>
+        <div class="box">-</div>
+        <div class="box">*</div>
+        <div class="box">/</div>
+        <div class="box" onclick="
+        let result = eval(currentDisplay);
+        currentDisplay = result;
+        document.querySelector('#display').value = currentDisplay;">=</div>
+     </div>
+    </div>
+    <script>
+        let currentDisplay = '';
+        document.querySelector('#display').value = currentDisplay;
+    </script>
+</body>
+</html>

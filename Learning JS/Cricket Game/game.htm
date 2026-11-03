@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRICKET GAME</title>
+</head>
+<body>
+    <h1>BAT BALL STUMP GAME</h1>
+    <button onclick="
+    let computerChoice = Math.random() * 3;
+    if(computerChoice >0 && computerChoice <1){
+        computerChoice = 'bat';
+        // console.log('computer has selected the bat');
+    }else if(computerChoice >1 && computerChoice <2){
+        computerChoice = 'ball';
+        // console.log('computer has selected the ball');
+    }else if(computerChoice >2 && computerChoice <3){
+        computerChoice = 'stump';
+        // console.log('computer has selected the stump');
+    }
+
+    let resultMsg;
+    if(computerChoice === 'ball'){
+        resultMsg = 'You have won';
+    }else if(computerChoice === 'bat'){
+        resultMsg = 'You have tied';
+    }else if(computerChoice === 'stump'){
+        resultMsg = 'You have lost';
+    }
+    alert(`you have selected the bat. Computer has selected ${computerChoice} and ${resultMsg}`);
+    "
+    >BAT</button>
+    <button onclick="
+    computerChoice = Math.random() * 3;
+    if(computerChoice >0 && computerChoice <1){
+        computerChoice = 'bat';
+        // console.log('computer has selected the bat');
+    }else if(computerChoice >1 && computerChoice <2){
+        computerChoice = 'ball';
+        // console.log('computer has selected the ball');
+    }else if(computerChoice >2 && computerChoice <3){
+        computerChoice = 'stump';
+        // console.log('computer has selected the stump');
+    }
+
+    let resultMsg;
+    if(computerChoice === 'bat'){
+        resultMsg = 'You have lost';
+        re
+    }else if(computerChoice === 'ball'){
+        resultMsg = 'You have tied';
+    }else if(computerChoice === 'stump'){
+        resultMsg = 'You have won';
+    }
+    alert(`you have selected the ball. Computer has selected ${computerChoice} and ${resultMsg}`);
+    ">BALL</button>
+    <button onclick="
+    computerChoice = Math.random() * 3;
+    if(computerChoice >0 && computerChoice <1){
+        computerChoice = 'bat';
+        // console.log('computer has selected the bat');
+    }else if(computerChoice >1 && computerChoice <2){
+        computerChoice = 'ball';
+        // console.log('computer has selected the ball');
+    }else if(computerChoice >2 && computerChoice <3){
+        computerChoice = 'stump';
+        // console.log('computer has selected the stump');
+    }
+
+    let resultMsg;
+    if(computerChoice === 'bat'){
+        resultMsg = 'You have won';
+    }else if(computerChoice === 'ball'){
+        resultMsg = 'You have lost';
+    }else if(computerChoice === 'stump'){
+        resultMsg = 'You have tied';
+    }
+    alert(`you have selected the stump. Computer has selected ${computerChoice} and ${resultMsg}`);
+    ">STUMP</button>
+</body>
+</html>
+
+<!-- <script>
+    //BALL
+    // let computerChoice = Math.random() * 3;
+
+    // if(computerChoice >0 && computerChoice<1){
+    //     computerChoice = 'bat';
+    // }else if(computerChoice >1 && computerChoice<2){
+    //     computerChoice = 'ball';
+    // }else if(computerChoice >2 && computerChoice<3){
+    //     computerChoice = 'stump';
+    // }
+
+
+    // let resultMsg;
+    // if(computerChoice === 'bat'){
+    //     resultMsg ='you have lost';
+    // }else if(computerChoice === 'ball'){
+    //     resultMsg ='you have tied';
+    // }else if(computerChoice === 'stump'){
+    //     resultMsg ='you have won';
+    // }
+
+    // alert(`you have selected the ball. and computer has selected $(computerChoice) and $(resultMsg)` );
+</script> -->
