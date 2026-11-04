@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/Learning JS/index.html"
+    "livePreview.defaultPreviewPath": "/Learning JS/index.html",
+    "liveServer.settings.multiRootWorkspaceName": "Internship_eAirweb"
 }
