@@ -15,12 +15,13 @@
             price: 50000,
         }
 
+        let str = JSON.stringify(product);
+        console.log(str);
+        let str2 = JSON.parse(str);
+        console.log(str2);
+        
         localStorage.setItem('product',JSON.stringify(product));
         console.log(product);
-
-        let p1 = JSON.parse(localStorage.getItem('product'));
-        console.log(p1);
-    </script>
+</script>
 </body>
-
 </html>

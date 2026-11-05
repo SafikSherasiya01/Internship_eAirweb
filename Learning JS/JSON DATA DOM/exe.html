@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EXE</title>
+    <style>
+        #btn{
+            height: 200px;
+            width: 200px;
+        }
+        .js-even{
+            background-color: aqua;
+        }
+        .js-odd{
+            background-color: rgb(242, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="gn"></h1><hr>
+    <h3>The color will change automatically when the number change between even and odd and number will also be auto incerment and it will also surive the refresh using local storage....</h3>
+    <button onclick=" clcs()" id="btn"></button>
+    <script>
+        let myDate = new Date;
+
+        let hours = myDate.getHours();
+
+        
+        function geeting(name ='Dear'){
+            if(hours >= 0 && hours <=12){
+            document.querySelector('#gn').innerText=`Good Morning ${name}`
+        }else if(hours >12 && hours <=17){
+             document.querySelector('#gn').innerText=`Good Afternoon ${name}`
+        } else if(hours >17 && hours <=24){
+            document.querySelector('#gn').innerText=`Good Evening ${name}`
+        }
+        }
+        geeting('safik');
+        
+        
+        let clc= localStorage.getItem('clc') || 0;
+        function clcs(){
+            clc ++;
+            localStorage.setItem('clc',clc);
+            updateclcs();
+        }
+        function updateclcs(){
+            let button = document.querySelector('#btn');
+            button.innerText = clc;
+
+            if(clc % 2 ==0 ) {
+               button.classList.remove('js-odd');
+               button.classList.add('js-even');
+            }else{
+                button.classList.remove('js-even');
+               button.classList.add('js-odd');
+            }
+        }
+
+        updateclcs();
+        
+    </script>
+</body>
+</html>
