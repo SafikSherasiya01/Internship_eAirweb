@@ -1,0 +1,47 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#main-heading{
+    text-align: center;
+}
+
+.item-container{
+    display: grid;
+    grid-template-columns: 150px 100px 120px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 150px 100px 120px;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-top:10px;
+    align-items: center;
+}
+
+#txt{
+    font-size: 14px;
+    padding: 10px 5px;
+}
+#dat{
+    font-size: 15px;
+    padding: 10px 5px;
+}
+#btn{
+    background-color: aquamarine;
+    border: 0px solid black;
+    border-radius: 10px;
+    height: 50px;
+}
+
+.btn1{
+    background-color: rgb(255, 0, 0);
+    border: 0px solid black;
+    border-radius: 10px;
+    height: 50px;
+    padding: 10px 5px;
+    cursor: pointer;
+}
