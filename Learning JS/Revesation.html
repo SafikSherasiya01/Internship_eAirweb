@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Recap of JS</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        // variable decarlation
+        // var , let , const
+        var a = 2;
+        console.log(a); // 2
+        a = 5;
+        console.log(a); // 5
+        var a = 10; // Redeclaration allowed
+        console.log(a); // 10
+
+        //let
+        let b = 10;
+        console.log(b); // 10
+        b = 20; // Allowed
+        console.log(b); // 20
+        // let b = 30; // Error: Cannot redeclare
+
+        //const
+        const pie = 3.14; //cannot redifine throughout the project
+        console.log(pie);
+        // pie = 3.5; it will show error
+        // console.log(pie); erroe
+
+        //Different Datatypes
+        //string , number , boolean , undefined , null , symbol , NaN 
+        let d = 'safik';//string
+        console.log(d);
+        let e = 5;//you can pass any Number 1,1.2...etc
+        console.log(e);
+        let f = true;//boolean
+        console.log(f);
+        let g;//undefined
+        console.log(g);
+        let z = null;//null
+        console.log(z);
+        console.log(d * e);//NaN
+
+        //Array store more then one value
+        let arr = [1,2,3,4,5];
+        console.log(arr);
+        arr.push(6);//add one value at last
+        console.log(arr);
+        arr.pop();//remove value form last
+        console.log(arr);
+        console.log(arr[0]);//access particuclar value
+        console.log(arr.length);//print the length of arr
+        //Array-Object
+        let arrObj = [{
+            name: 'safik',
+            age: 20
+        },{
+            name: 'azim',
+            age: 21
+        }]
+        console.log(arrObj[1].name);
+        console.log(arrObj[0].age);
+
+        //Object 
+
+        //creating obj
+        let obj = {
+            name: 'safik',
+            age:20
+        }
+        let obj1 = {
+            name: 'azim',
+            age:21
+        }
+        let obj2 = {
+            name: 'nisar',
+            age:22
+        }
+        //Accessing obj
+        console.log(obj.name);
+        console.log(obj1.name);
+        console.log(obj2.name);
+
+        //Function inside object
+        let objFun ={
+            name: 'Xman',
+            Age : 500,
+            man(){//function
+                console.log('hello')//method
+            }
+        }
+        objFun.man();//accessing function using obj
+
+        //Function
+        function greeting() {
+            console.log('Welcome Uncle......')
+        }
+
+        greeting();
+
+        //Default parameter
+        function greet(name) {
+            console.log(`Welcome Uncle......${name}`)
+        }
+        greet('safik');
+
+        //Function with parameter
+        function sum1(num1,num2){
+            console.log(num1+num2);
+        }
+        sum1(2,5);
+
+        //Function using =>
+         let name1 = (num) =>  num*num ;
+         console.log(name1(2));
+
+         let add = (num3,num4) => {
+            console.log(num3+num4);
+         }
+         add(5,6);
+
+        //  Anonymous Function
+         let x1 = function(){
+            console.log('Anonymous Function')
+         }
+         x1();
+
+         //Loops
+         //while
+         x=0;
+         while(x<5){
+            console.log('hello');
+            x++;
+         }
+
+         //Do While
+         ii=1;
+         do{
+            console.log('Dooooooo')
+            ii++;
+         }
+         while(ii<=12); 
+
+         //for
+         for(i = 1; i <= 10; i++){
+            console.log('sorry')
+         }
+         //
+        
+
+    </script>
+</body>
+
+</html>
